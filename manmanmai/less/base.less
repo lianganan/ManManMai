@@ -1,0 +1,191 @@
+@import "./variable";
+
+html {
+  background: #fff;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%
+}
+
+html * {
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  /*设置所有的盒子的宽度以边框开始计算*/
+  -webkit-box-sizing: border-box;
+  /*要兼容 webkit 浏览器内核厂商 这种情况一般是老的移动端浏览器*/
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #f7f7f7;
+  color: @font-color;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+
+body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form, fieldset, legend, input, textarea, p, blockquote, th, td, hr, button, article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, ::before, ::after {
+  margin: 0;
+  padding: 0;
+  /*在移动端特殊的设置*/
+}
+
+input, select, textarea, button {
+  font-size: 100%
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0
+}
+
+fieldset, img {
+  border: 0
+}
+
+del {
+  text-decoration: line-through
+}
+
+address, caption, cite, code, dfn, em, th, var {
+  font-style: normal;
+  font-weight: 500
+}
+
+ol, ul {
+  list-style: none
+}
+
+caption, th {
+  text-align: left
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-size: 100%;
+  font-weight: 500
+}
+
+ins, a {
+  text-decoration: none;
+  color: @font-color;
+}
+
+a:hover {
+  color: @font-color;
+}
+
+input, textarea, button {
+  border: none;
+  outline: none;
+  resize: none;
+  /*特殊的属性定义  清除浏览器给input自带的样式*/
+  -webkit-appearance: none; /*组件默认的样式空*/
+}
+
+/*------------- E  reset css  重置默认的一些样式  浏览器子自带的  目的是保持各种终端显示一致 -----------------*/
+
+/*------------- S common css  也就是我们公用的css -------------*/
+.f-left {
+  float: left;
+}
+
+.f-right {
+  float: right;
+}
+
+.clearfix::after,
+.clearfix::before {
+  content: ".";
+  line-height: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+
+/*全屏容器*/
+.mmm_container {
+  width: 100%;
+  height: 2500px;
+  background-color: #f1f1f1;
+  /*公共头部及搜索框*/
+  .mmm_header {
+    height: 98* @base;
+    background-color: @mmmColor;
+    border-bottom: 1px solid #ecf8ff;
+    a {
+      height: 100%;
+      padding: 10*@base 12*@base;
+    }
+    img {
+    }
+    .mmm_logo {
+      padding: 25*@base 16*@base;
+      img {
+        height: 50*@base;
+      }
+    }
+    .mmm_down {
+      padding: 14*@base;
+      img {
+        height: 68*@base;
+      }
+    }
+  }
+  .mmm_search {
+    padding: 20*@base;
+    background-color: #fff;
+    position: relative;
+    .input_search {
+      padding-right: 148*@base;
+      input {
+        width: 100%;
+        height: 60*@base;
+        background-color: #f1f1f1;
+        padding-left: 20*@base;
+        border-radius: 60*@base;
+        .font-size(32);
+      }
+    }
+    button {
+      width: 128*@base;
+      height: 60*@base;
+      border-radius: 60*@base;
+      background-color: @mmmColor;
+      position: absolute;
+      top: 20*@base;
+      right: 20*@base;
+      .font-size(32);
+      color: #fff;
+    }
+  }
+}
+
+/*公共尾部*/
+.mmm_footer {
+  .footer_t {
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    a {
+      float: left;
+      width: 33.333%;
+      height: 64*@base;
+      text-align: center;
+      line-height: 64*@base;
+      .font-size(28);
+      border-right: 1px solid #ccc;
+    }
+    a:last-child {
+      border-right: none;
+    }
+    img {
+      width: 30*@base;
+      height: 30*@base;
+      vertical-align: middle;
+      margin-top: -10*@base;
+    }
+  }
+  .footer_b {
+    padding: 20*@base 0;
+    text-align: center;
+  }
+}

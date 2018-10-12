@@ -1,0 +1,434 @@
+html {
+  background: #fff;
+  overflow-y: scroll;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+html * {
+  outline: 0;
+  -webkit-text-size-adjust: none;
+  -webkit-tap-highlight-color: transparent;
+  /*设置所有的盒子的宽度以边框开始计算*/
+  -webkit-box-sizing: border-box;
+  /*要兼容 webkit 浏览器内核厂商 这种情况一般是老的移动端浏览器*/
+  box-sizing: border-box;
+}
+html,
+body {
+  background: #f7f7f7;
+  color: #5a5a5a;
+  font-family: "Helvetica Neue", Helvetica, STHeiTi, sans-serif !important;
+}
+body,
+div,
+dl,
+dt,
+dd,
+ul,
+ol,
+li,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+pre,
+code,
+form,
+fieldset,
+legend,
+input,
+textarea,
+p,
+blockquote,
+th,
+td,
+hr,
+button,
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  /*在移动端特殊的设置*/
+}
+input,
+select,
+textarea,
+button {
+  font-size: 100%;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+fieldset,
+img {
+  border: 0;
+}
+del {
+  text-decoration: line-through;
+}
+address,
+caption,
+cite,
+code,
+dfn,
+em,
+th,
+var {
+  font-style: normal;
+  font-weight: 500;
+}
+ol,
+ul {
+  list-style: none;
+}
+caption,
+th {
+  text-align: left;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-size: 100%;
+  font-weight: 500;
+}
+ins,
+a {
+  text-decoration: none;
+  color: #5a5a5a;
+}
+a:hover {
+  color: #5a5a5a;
+}
+input,
+textarea,
+button {
+  border: none;
+  outline: none;
+  resize: none;
+  /*特殊的属性定义  清除浏览器给input自带的样式*/
+  -webkit-appearance: none;
+  /*组件默认的样式空*/
+}
+/*------------- E  reset css  重置默认的一些样式  浏览器子自带的  目的是保持各种终端显示一致 -----------------*/
+/*------------- S common css  也就是我们公用的css -------------*/
+.f-left {
+  float: left;
+}
+.f-right {
+  float: right;
+}
+.clearfix::after,
+.clearfix::before {
+  content: ".";
+  line-height: 0;
+  height: 0;
+  display: block;
+  visibility: hidden;
+  clear: both;
+}
+/*全屏容器*/
+.mmm_container {
+  width: 100%;
+  height: 2500px;
+  background-color: #f1f1f1;
+  /*公共头部及搜索框*/
+}
+.mmm_container .mmm_header {
+  height: 1.306634rem;
+  background-color: #ff841d;
+  border-bottom: 1px solid #ecf8ff;
+}
+.mmm_container .mmm_header a {
+  height: 100%;
+  padding: 0.13333rem 0.159996rem;
+}
+.mmm_container .mmm_header .mmm_logo {
+  padding: 0.333325rem 0.213328rem;
+}
+.mmm_container .mmm_header .mmm_logo img {
+  height: 0.66665rem;
+}
+.mmm_container .mmm_header .mmm_down {
+  padding: 0.186662rem;
+}
+.mmm_container .mmm_header .mmm_down img {
+  height: 0.906644rem;
+}
+.mmm_container .mmm_search {
+  padding: 0.26666rem;
+  background-color: #fff;
+  position: relative;
+}
+.mmm_container .mmm_search .input_search {
+  padding-right: 1.973284rem;
+}
+.mmm_container .mmm_search .input_search input {
+  width: 100%;
+  height: 0.79998rem;
+  background-color: #f1f1f1;
+  padding-left: 0.26666rem;
+  border-radius: 0.79998rem;
+  font-size: 16px;
+}
+[data-dpr='2'] .mmm_container .mmm_search .input_search input {
+  font-size: 32px;
+}
+[data-dpr='2.5'] .mmm_container .mmm_search .input_search input {
+  font-size: 40px;
+}
+[data-dpr="2.75"] .mmm_container .mmm_search .input_search input {
+  font-size: 44px;
+}
+[data-dpr="3"] .mmm_container .mmm_search .input_search input {
+  font-size: 48px;
+}
+[data-dpr="4"] .mmm_container .mmm_search .input_search input {
+  font-size: 64px;
+}
+.mmm_container .mmm_search button {
+  width: 1.706624rem;
+  height: 0.79998rem;
+  border-radius: 0.79998rem;
+  background-color: #ff841d;
+  position: absolute;
+  top: 0.26666rem;
+  right: 0.26666rem;
+  font-size: 16px;
+  color: #fff;
+}
+[data-dpr='2'] .mmm_container .mmm_search button {
+  font-size: 32px;
+}
+[data-dpr='2.5'] .mmm_container .mmm_search button {
+  font-size: 40px;
+}
+[data-dpr="2.75"] .mmm_container .mmm_search button {
+  font-size: 44px;
+}
+[data-dpr="3"] .mmm_container .mmm_search button {
+  font-size: 48px;
+}
+[data-dpr="4"] .mmm_container .mmm_search button {
+  font-size: 64px;
+}
+/*公共尾部*/
+.mmm_footer .footer_t {
+  border-top: 1px solid #ccc;
+  border-bottom: 1px solid #ccc;
+}
+.mmm_footer .footer_t a {
+  float: left;
+  width: 33.333%;
+  height: 0.853312rem;
+  text-align: center;
+  line-height: 0.853312rem;
+  font-size: 14px;
+  border-right: 1px solid #ccc;
+}
+[data-dpr='2'] .mmm_footer .footer_t a {
+  font-size: 28px;
+}
+[data-dpr='2.5'] .mmm_footer .footer_t a {
+  font-size: 35px;
+}
+[data-dpr="2.75"] .mmm_footer .footer_t a {
+  font-size: 39px;
+}
+[data-dpr="3"] .mmm_footer .footer_t a {
+  font-size: 42px;
+}
+[data-dpr="4"] .mmm_footer .footer_t a {
+  font-size: 56px;
+}
+.mmm_footer .footer_t a:last-child {
+  border-right: none;
+}
+.mmm_footer .footer_t img {
+  width: 0.39999rem;
+  height: 0.39999rem;
+  vertical-align: middle;
+  margin-top: -0.13333rem;
+}
+.mmm_footer .footer_b {
+  padding: 0.26666rem 0;
+  text-align: center;
+}
+.mmm_main .mmm_nav {
+  margin-top: 0.26666rem;
+  background-color: #fff;
+}
+.mmm_main .mmm_nav li {
+  float: left;
+  width: 25%;
+  padding: 0.639984rem 0;
+}
+.mmm_main .mmm_nav a {
+  display: block;
+  text-align: center;
+}
+.mmm_main .mmm_nav img {
+  width: 1.3333rem;
+}
+.mmm_main .mmm_nav p {
+  font-size: 13px;
+  margin-top: 0.13333rem;
+}
+[data-dpr='2'] .mmm_main .mmm_nav p {
+  font-size: 26px;
+}
+[data-dpr='2.5'] .mmm_main .mmm_nav p {
+  font-size: 33px;
+}
+[data-dpr="2.75"] .mmm_main .mmm_nav p {
+  font-size: 36px;
+}
+[data-dpr="3"] .mmm_main .mmm_nav p {
+  font-size: 39px;
+}
+[data-dpr="4"] .mmm_main .mmm_nav p {
+  font-size: 52px;
+}
+.mmm_main .mmm_discount {
+  margin-top: 0.13333rem;
+}
+.mmm_main .mmm_discount .title {
+  overflow: hidden;
+  height: 0.93331rem;
+  background-color: #ff9000;
+  background-image: linear-gradient(#ffaf47, #ff9000);
+  font-size: 18px;
+  line-height: 0.93331rem;
+  padding: 0 0.26666rem;
+  word-break: break-all;
+}
+[data-dpr='2'] .mmm_main .mmm_discount .title {
+  font-size: 36px;
+}
+[data-dpr='2.5'] .mmm_main .mmm_discount .title {
+  font-size: 45px;
+}
+[data-dpr="2.75"] .mmm_main .mmm_discount .title {
+  font-size: 50px;
+}
+[data-dpr="3"] .mmm_main .mmm_discount .title {
+  font-size: 54px;
+}
+[data-dpr="4"] .mmm_main .mmm_discount .title {
+  font-size: 72px;
+}
+.mmm_main .mmm_discount .title a {
+  color: #fff;
+}
+.mmm_main .mmm_discount .title img {
+  width: 0.53332rem;
+  height: 0.53332rem;
+  margin-top: 0.199995rem;
+}
+.mmm_main .mmm_discount .products {
+  background-color: #fff;
+}
+.mmm_main .mmm_discount .products li {
+  border-bottom: 2px solid #ccc;
+  padding-bottom: 0.13333rem;
+}
+.mmm_main .mmm_discount .products a {
+  display: block;
+}
+.mmm_main .mmm_discount .products .left {
+  padding: 0.26666rem 0.13333rem;
+}
+.mmm_main .mmm_discount .products .left img {
+  width: 2.79993rem;
+}
+.mmm_main .mmm_discount .products .right {
+  width: 100%;
+  padding-left: 2.79993rem;
+}
+.mmm_main .mmm_discount .products .right .pro_title {
+  font-size: 15px;
+  color: #333;
+  height: 1.99995rem;
+  padding-top: 0.66665rem;
+}
+[data-dpr='2'] .mmm_main .mmm_discount .products .right .pro_title {
+  font-size: 30px;
+}
+[data-dpr='2.5'] .mmm_main .mmm_discount .products .right .pro_title {
+  font-size: 38px;
+}
+[data-dpr="2.75"] .mmm_main .mmm_discount .products .right .pro_title {
+  font-size: 41px;
+}
+[data-dpr="3"] .mmm_main .mmm_discount .products .right .pro_title {
+  font-size: 45px;
+}
+[data-dpr="4"] .mmm_main .mmm_discount .products .right .pro_title {
+  font-size: 60px;
+}
+.mmm_main .mmm_discount .products .right .pro_title span {
+  color: #ff6c00;
+}
+.mmm_main .mmm_discount .products .right .other {
+  color: #a1a1a1;
+  height: 0.66665rem;
+  line-height: 0.66665rem;
+}
+.mmm_main .mmm_discount .products .right .comment {
+  margin-right: 0.39999rem;
+}
+.mmm_main .mmm_discount .products .right .comment .icon-comment {
+  display: inline-block;
+  width: 0.333325rem;
+  height: 0.26666rem;
+  background: url("../images/comment.svg");
+  vertical-align: middle;
+  margin-right: 0.13333rem;
+}
+.mmm_main .mmm_more {
+  padding: 0.13333rem;
+}
+.mmm_main .mmm_more a {
+  width: 100%;
+  display: block;
+  height: 0.79998rem;
+  background-color: #f4f4f4;
+  background-image: linear-gradient(#ffffff, #f4f4f4);
+  border: 2px solid #ccc;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 0.79998rem;
+  font-size: 14px;
+  color: #000;
+}
+[data-dpr='2'] .mmm_main .mmm_more a {
+  font-size: 28px;
+}
+[data-dpr='2.5'] .mmm_main .mmm_more a {
+  font-size: 35px;
+}
+[data-dpr="2.75"] .mmm_main .mmm_more a {
+  font-size: 39px;
+}
+[data-dpr="3"] .mmm_main .mmm_more a {
+  font-size: 42px;
+}
+[data-dpr="4"] .mmm_main .mmm_more a {
+  font-size: 56px;
+}

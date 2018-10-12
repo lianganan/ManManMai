@@ -1,0 +1,106 @@
+@import "base";
+
+.mmm_main {
+  .mmm_nav {
+    margin-top: 20*@base;
+    background-color: #fff;
+    li {
+      float: left;
+      width: 25%;
+      padding: 48*@base 0;
+    }
+    a {
+      display: block;
+      text-align: center;
+    }
+    img {
+      width: 100*@base;
+    }
+    p {
+      .font-size(26);
+      margin-top: 10*@base;
+    }
+  }
+  .mmm_discount {
+    margin-top: 10*@base;
+    .title {
+      overflow: hidden;
+      height: 70*@base;
+      background-color: #ff9000;
+      background-image: linear-gradient(#ffaf47, #ff9000);
+      .font-size(18*2);
+      line-height: 70*@base;
+      padding: 0 20*@base;
+      word-break: break-all;
+      a {
+        color: #fff;
+      }
+      img {
+        width: 40*@base;
+        height: 40*@base;
+        margin-top: 15*@base;
+      }
+    }
+    .products {
+      background-color: #fff;
+      li {
+        border-bottom: 2px solid #ccc;
+        padding-bottom: 10*@base;
+      }
+      a {
+        display: block;
+      }
+      .left {
+        padding: 20*@base 10*@base;
+        img {
+          width: 210*@base;
+        }
+      }
+      .right {
+        width: 100%;
+        padding-left: 210*@base;
+        .pro_title {
+          .font-size(15*2);
+          color: #333;
+          height: 150*@base;
+          padding-top: 50*@base;
+          span {
+            color: #ff6c00;
+          }
+        }
+        .other {
+          color: #a1a1a1;
+          height: 50*@base;
+          line-height: 50*@base;
+        }
+        .comment {
+          margin-right: 30*@base;
+          .icon-comment {
+            display: inline-block;
+            width: 25*@base;
+            height: 20*@base;
+            background: url("../images/comment.svg");
+            vertical-align: middle;
+            margin-right: 10*@base;
+          }
+        }
+      }
+    }
+  }
+  .mmm_more {
+    padding: 10*@base;
+    a {
+      width: 100%;
+      display: block;
+      height: 60*@base;
+      background-color: #f4f4f4;
+      background-image: linear-gradient(#fff,#f4f4f4);
+      border: 2px solid #ccc;
+      border-radius: 3px;
+      text-align: center;
+      line-height: 60*@base;
+      .font-size(28);
+      color: #000;
+    }
+  }
+}
