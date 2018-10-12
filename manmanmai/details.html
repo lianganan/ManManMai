@@ -1,0 +1,130 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./lib/flexible/flexible_css.js"></script>
+  <script src="./lib/flexible/flexible.js"></script>
+  <link rel="stylesheet" href="./css/comment.css">
+  <title>商品详情</title>
+</head>
+<body>
+
+<!--全屏容器-->
+<div class="mmm_container">
+
+  <!--头部-->
+  <div class="mmm_header">
+    <a href="index.html" class="f-left mmm_logo">
+      <img src="./images/header_logo.png" alt="">
+    </a>
+    <a href="javascript: void(0);" class="f-right mmm_down">
+      <img src="./images/header_app.png" alt="">
+    </a>
+  </div>
+
+  <!--搜索框-->
+  <div class="mmm_search clearfix">
+    <div class="input_search">
+      <input type="text" placeholder="请输入你想比价的商品">
+    </div>
+    <button>搜索</button>
+  </div>
+
+  <!--主体内容-->
+  <div class="productlist_main">
+
+    <div class="productlist_nav">
+      <a href="index.html">首页></a>
+      <a href="index.html">全部分类></a>
+      <a href="index.html" class="category_san">乐视TV（Letv）S50 ></a>
+      <button class="f-right">筛选</button>
+    </div>
+    <div class="bj_content">
+      <!--头部-->
+      <div class="bj_header">
+        <!--模板渲染-->
+      </div>
+      <!--按钮-->
+      <div class="bj_btns clearfix">
+        <a href="#" class="current">比价购买</a>
+        <a href="#">产品参数</a>
+        <a href="#">评价（2322）</a>
+      </div>
+      <!--价格-->
+      <div class="bj_price">
+        <div class="bj_source f-left clearfix">
+          <i class="icon_source f-left"></i>
+          <span class="f-right"><a href="javascript:;">京东商城</a></span>
+        </div>
+        <div class="price f-right">
+          &yen;1999.00
+          <button>去购买</button>
+        </div>
+      </div>
+      <!--提示-->
+      <div class="bj_hint">
+        <p>*使用了一周整体不错，主要是为了看纪录片和足球。装在窗户上有种大鱼缸的感觉哈！清晰度不错色彩也可以，应该说对得起2200的价格！还送了五年乐视会员，看英超所有比赛都free</p>
+      </div>
+      <!--评价-->
+      <div class="bj_estimate">
+        <!--渲染-->
+      </div>
+
+      <!--查看更多-->
+      <div class="mmm_more">
+        <a href="#">查看更多评价>></a>
+      </div>
+    </div>
+  </div>
+
+  <!--底部-->
+  <div class="mmm_footer">
+    <div class="footer_t clearfix">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#">
+        <img src="./images/top.jpg" alt="">
+        返回顶部
+      </a>
+    </div>
+    <div class="footer_b">
+      <p>
+        <a href="#" style="color: red;">手机APP下载</a>
+        <a href="#" style="color: #000">慢慢买手机版</a>
+        <a href="#">--掌上比价平台</a>
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+</div>
+<script src="./lib/jquery/jquery-1.12.0.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="js/details.js"></script>
+<script type="text/template" id="tmp1">
+
+  <h3>{{result[0].productName}}</h3>
+  {{@result[0].productImg}}
+
+</script>
+
+<script type="text/template" id="tmp2">
+
+  <div class="estimate_title">
+    网友评价
+  </div>
+  {{each result v i}}
+  <div class="estimate_content">
+    <div class="title">
+      <p class="clearfix"><span class="f-left">{{v.comName}}</span><span class="f-right">{{v.comTime}}</span></p>
+      <p>{{v.comFrom}}</p>
+    </div>
+    <div class="content">
+      <p>{{v.comContent}}</p>
+    </div>
+  </div>
+{{/each}}
+</script>
+</body>
+</html>

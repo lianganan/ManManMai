@@ -28,5 +28,9 @@ $(function () {
         $('.content ul').html(template('tmp2',info));
       }
     })
+  });
+
+  $('.category_list').on('click','.category_id',function () {
+    location.href = 'productlist.html?categoryId=' + $(this).data('cgid') + '&category=' + $(this).data('category') ;
   })
 })

@@ -41,67 +41,78 @@
         margin-top: 15*@base;
       }
     }
-    .products {
-      background-color: #fff;
-      li {
-        border-bottom: 2px solid #ccc;
-        padding-bottom: 10*@base;
-      }
-      a {
-        display: block;
-      }
-      .left {
-        padding: 20*@base 10*@base;
-        img {
-          width: 210*@base;
-        }
-      }
-      .right {
-        width: 100%;
-        padding-left: 210*@base;
-        .pro_title {
-          .font-size(15*2);
-          color: #333;
-          height: 150*@base;
-          padding-top: 50*@base;
-          span {
-            color: #ff6c00;
-          }
-        }
-        .other {
-          color: #a1a1a1;
-          height: 50*@base;
-          line-height: 50*@base;
-        }
-        .comment {
-          margin-right: 30*@base;
-          .icon-comment {
-            display: inline-block;
-            width: 25*@base;
-            height: 20*@base;
-            background: url("../images/comment.svg");
-            background-size: 25*@base 20*@base;
-            vertical-align: middle;
-            margin-right: 10*@base;
-          }
-        }
-      }
+  }
+}
+/*查看更多公共类*/
+.mmm_more {
+  padding: 10*@base;
+  a {
+    width: 100%;
+    display: block;
+    height: 60*@base;
+    background-color: #f4f4f4;
+    background-image: linear-gradient(#fff, #f4f4f4);
+    border: 2px solid #ccc;
+    border-radius: 3px;
+    text-align: center;
+    line-height: 60*@base;
+    .font-size(28);
+    color: #000;
+  }
+}
+
+/*商品公共布局*/
+.products {
+  background-color: #fff;
+  li {
+    border-bottom: 2px solid #ccc;
+    padding-bottom: 10*@base;
+    .price {
+      .font-size(36);
+      color: red;
+      font-weight: 700;
     }
   }
-  .mmm_more {
-    padding: 10*@base;
-    a {
-      width: 100%;
-      display: block;
-      height: 60*@base;
-      background-color: #f4f4f4;
-      background-image: linear-gradient(#fff, #f4f4f4);
-      border: 2px solid #ccc;
-      border-radius: 3px;
-      text-align: center;
-      line-height: 60*@base;
-      .font-size(28);
-      color: #000;
+  a {
+    display: block;
+  }
+  .left {
+    padding: 20*@base 10*@base;
+    img {
+      width: 210*@base;
+      height: 210*@base;
+    }
+  }
+  .right {
+    width: 100%;
+    padding-left: 220*@base;
+    .pro_title {
+      .font-size(15*2);
+      color: #333;
+      height: 150*@base;
+      padding-top: 50*@base;
+      span {
+
+        color: #ff6c00;
+      }
+    }
+    .other {
+      color: #a1a1a1;
+      height: 50*@base;
+      line-height: 50*@base;
+      margin-left: 10*@base;
+    }
+    .comment {
+      margin-right: 30*@base;
+      .icon-comment {
+        display: inline-block;
+        width: 25*@base;
+        height: 20*@base;
+        background: url("../images/comment.svg");
+        background-size: 25*@base 20*@base;
+        vertical-align: middle;
+        margin-right: 10*@base;
+      }
     }
   }
 }
@@ -135,9 +146,149 @@
         border-bottom: 1px solid #ccc;
         float: left;
       }
-      li:nth-child(3n-2){
+      li:nth-child(3n-2) {
         border-left: 1px solid #ccc;
       }
+    }
+  }
+}
+
+/*商品列表*/
+.productlist_main {
+  .productlist_nav {
+    height: 79*@base;
+    border-top: 2px solid #ccc;
+    border-bottom: 2px solid #ccc;
+    background-image: linear-gradient(#fff, #ddd);
+    line-height: 79*@base;
+    padding: 0 20*@base;
+    .font-size(32);
+    a {
+      color: #000;
+    }
+    button {
+      width: 126*@base;
+      height: 60*@base;
+      background-image: linear-gradient(#ddd, #fff);
+      border: 2px solid #ccc;
+      border-radius: 5*@base;
+      margin-top: 6*@base;
+    }
+  }
+}
+
+/*比价*/
+.bj_content {
+  .bj_header {
+    text-align: center;
+    padding: 40*@base;
+    background-color: #fff;
+    h3 {
+      .font-size(40);
+      margin-bottom: 40*@base;
+    }
+    img {
+      width: 410*@base;
+      height: 410*@base;
+    }
+  }
+  .bj_btns {
+    background-color: #ffc62a;
+    border-top: 2px solid #c94900;
+    border-bottom: 2px solid #c94900;
+    a {
+      float: left;
+      width: 33.333%;
+      height: 70*@base;
+      line-height: 70*@base;
+      text-align: center;
+      border-right: 2px solid #c94900;
+      .font-size(32);
+      color: #fff;
+    }
+    a.current {
+      background-color: #ff9b19;
+    }
+    a:last-child {
+      border-right: none;
+    }
+  }
+  .bj_price {
+    height: 90*@base;
+    background-color: #fff;
+    border-bottom: 2px solid #ccc;
+    padding: 0 10*@base;
+    .font-size(32);
+    .bj_source {
+      line-height: 90*@base;
+      position: relative;
+      padding-left: 24*@base;
+      i {
+        width: 24*@base;
+        height: 24*@base;
+        background: url("../images/slogo.png");
+        background-size: 24*@base 24*@base;
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+      span {
+        margin-left: 10*@base;
+      }
+    }
+    .price {
+      height: 100%;
+      line-height: 90*@base;
+      color: red;
+      font-weight: 700;
+      button {
+        width: 114*@base;
+        height: 48*@base;
+        background-color: #ff5500;
+        border-radius: 5px;
+        color: #fff;
+        margin-left: 20*@base;
+      }
+    }
+  }
+  .bj_hint {
+    height: 124*@base;
+    border-bottom: 10*@base solid #757575;
+    padding: 20*@base;
+  }
+  .bj_estimate {
+    background-color: #fff;
+    .estimate_title {
+      height: 66*@base;
+      border-top: 2px solid #fff;
+      text-align: center;
+      line-height: 66*@base;
+      .font-size(32);
+      color: #000;
+      background-color: #dbdbdb;
+    }
+    .estimate_content {
+      border-bottom: 2px solid #ccc;
+      padding: 0 20*@base;
+      .title {
+        height: 105*@base;
+        line-height: 50*@base;
+        p:first-child {
+          .font-size(28);
+        }
+        p:last-child {
+          text-align: right;
+        }
+      }
+    }
+  }
+  .content{
+    padding-bottom: 20*@base;
+    p {
+      text-align: left;
+      line-height: 20px;
+      color: #000;
     }
   }
 }
