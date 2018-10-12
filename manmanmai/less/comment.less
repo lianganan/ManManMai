@@ -80,6 +80,7 @@
             width: 25*@base;
             height: 20*@base;
             background: url("../images/comment.svg");
+            background-size: 25*@base 20*@base;
             vertical-align: middle;
             margin-right: 10*@base;
           }
@@ -94,13 +95,49 @@
       display: block;
       height: 60*@base;
       background-color: #f4f4f4;
-      background-image: linear-gradient(#fff,#f4f4f4);
+      background-image: linear-gradient(#fff, #f4f4f4);
       border: 2px solid #ccc;
       border-radius: 3px;
       text-align: center;
       line-height: 60*@base;
       .font-size(28);
       color: #000;
+    }
+  }
+}
+
+/* 比价搜索*/
+.category_main {
+  padding-bottom: 20*@base;
+  background-color: #fff;
+  .category_list {
+    padding: 10*@base;
+    .title {
+      height: 78*@base;
+      background-color: #ddd;
+      padding-left: 20*@base;
+      line-height: 78*@base;
+      border-bottom: 1px solid #ccc;
+      .font-size(40);
+      a {
+        color: #000000;
+      }
+    }
+    .content {
+      background-color: #fff;
+      display: none;
+      li {
+        width: 33.333%;
+        height: 82*@base;
+        text-align: center;
+        line-height: 82*@base;
+        border-right: 1px solid #ccc;
+        border-bottom: 1px solid #ccc;
+        float: left;
+      }
+      li:nth-child(3n-2){
+        border-left: 1px solid #ccc;
+      }
     }
   }
 }

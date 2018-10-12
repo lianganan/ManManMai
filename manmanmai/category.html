@@ -6,7 +6,7 @@
   <script src="./lib/flexible/flexible_css.js"></script>
   <script src="./lib/flexible/flexible.js"></script>
   <link rel="stylesheet" href="./css/comment.css">
-  <title>首页</title>
+  <title>比价搜索</title>
 </head>
 <body>
 
@@ -15,7 +15,7 @@
 
   <!--头部-->
   <div class="mmm_header">
-    <a href="javascript: void(0);" class="f-left mmm_logo">
+    <a href="index.html" class="f-left mmm_logo">
       <img src="./images/header_logo.png" alt="">
     </a>
     <a href="javascript: void(0);" class="f-right mmm_down">
@@ -34,6 +34,9 @@
   <!--主体内容-->
   <div class="category_main">
 
+    <ul class="category_list">
+      <!--模板渲染-->
+    </ul>
 
   </div>
 
@@ -60,6 +63,27 @@
 </div>
 <script src="./lib/jquery/jquery-1.12.0.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/category.js"></script>
+<script type="text/template" id="tmp1">
+{{each result v i}}
+  <li>
+    <div class="title" data-id="{{v.titleId}}">
+      <a href="javascript:void(0);">{{v.title}}</a>
+    </div>
+    <div class="content">
+      <ul class="clearfix">
 
+      </ul>
+    </div>
+  </li>
+{{/each}}
+</script>
+<script type="text/template" id="tmp2">
+{{each result v i}}
+  <li>
+    <a href="#">{{v.category}}</a>
+  </li>
+{{/each}}
+</script>
 </body>
 </html>
