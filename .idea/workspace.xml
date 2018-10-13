@@ -2,16 +2,31 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b3c69373-164e-4dff-9197-4db605ce77dd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/manmanmai/details.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manmanmai/js/details.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manmanmai/js/productlist.js" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/manmanmai/productlist.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/baicaijia.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/coupon.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/couponproduct.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/discount.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/inlanddiscount.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/js/baicaijia.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/js/coupon.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/js/couponproduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/js/discount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/js/inlanddiscount.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/js/moneyctrl.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/js/moneyproduct.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/lib/iscroll/iscroll.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/moneyctrl.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/manmanmai/moneyproduct.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manmanmai/category.html" beforeDir="false" afterPath="$PROJECT_DIR$/manmanmai/category.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manmanmai/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/manmanmai/css/base.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manmanmai/css/comment.css" beforeDir="false" afterPath="$PROJECT_DIR$/manmanmai/css/comment.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/manmanmai/js/category.js" beforeDir="false" afterPath="$PROJECT_DIR$/manmanmai/js/category.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manmanmai/details.html" beforeDir="false" afterPath="$PROJECT_DIR$/manmanmai/details.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manmanmai/images/icon_bar.png" beforeDir="false" afterPath="$PROJECT_DIR$/manmanmai/images/icon_bar.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manmanmai/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/manmanmai/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manmanmai/less/base.less" beforeDir="false" afterPath="$PROJECT_DIR$/manmanmai/less/base.less" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/manmanmai/less/comment.less" beforeDir="false" afterPath="$PROJECT_DIR$/manmanmai/less/comment.less" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/manmanmai/productlist.html" beforeDir="false" afterPath="$PROJECT_DIR$/manmanmai/productlist.html" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -26,83 +41,79 @@
     <session id="-1704306782">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.37" value="1" />
           <entry key="project.open.time.4" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.opened" value="3" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="11" />
-          <entry key="html" value="13" />
-          <entry key="js" value="23" />
-          <entry key="less" value="31" />
+          <entry key="css" value="18" />
+          <entry key="html" value="49" />
+          <entry key="js" value="56" />
+          <entry key="less" value="44" />
           <entry key="rnc" value="2" />
           <entry key="svg" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="11" />
-          <entry key="HTML" value="13" />
-          <entry key="JavaScript" value="23" />
-          <entry key="Less" value="31" />
+          <entry key="CSS" value="18" />
+          <entry key="HTML" value="49" />
+          <entry key="JavaScript" value="56" />
+          <entry key="Less" value="44" />
           <entry key="RNG Compact" value="2" />
           <entry key="SVG" value="1" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="2444" />
-          <entry key="js" value="1470" />
-          <entry key="less" value="3233" />
+          <entry key="css" value="7" />
+          <entry key="html" value="4077" />
+          <entry key="js" value="3065" />
+          <entry key="less" value="6217" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="2444" />
-          <entry key="JavaScript" value="1470" />
-          <entry key="Less" value="3233" />
+          <entry key="CSS" value="7" />
+          <entry key="HTML" value="4077" />
+          <entry key="JavaScript" value="3065" />
+          <entry key="Less" value="6217" />
         </counts>
       </usages-collector>
     </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/manmanmai/details.html">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/manmanmai/less/comment.less">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="280">
-              <caret line="119" column="100" selection-start-line="119" selection-start-column="100" selection-end-line="119" selection-end-column="100" />
+            <state relative-caret-position="520">
+              <caret line="493" column="20" selection-start-line="493" selection-start-column="20" selection-end-line="493" selection-end-column="20" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/manmanmai/couponproduct.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="376">
+              <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
               <folding>
-                <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#2;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="e#1597#1602#1" expanded="true" />
-                <element signature="n#div#3;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-                <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#p#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manmanmai/js/details.js">
+        <entry file="file://$PROJECT_DIR$/manmanmai/js/couponproduct.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/manmanmai/js/productlist.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="30" column="39" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="39" />
+            <state relative-caret-position="432">
+              <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -123,6 +134,7 @@
       <find>px2rem</find>
       <find>i</find>
       <find>i {</find>
+      <find>dow</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,18 +150,33 @@
         <option value="$PROJECT_DIR$/../JMMB_APP/less/base.less" />
         <option value="$PROJECT_DIR$/manmanmai/js/index.js" />
         <option value="$PROJECT_DIR$/manmanmai/less/index.less" />
-        <option value="$PROJECT_DIR$/manmanmai/css/base.css" />
-        <option value="$PROJECT_DIR$/manmanmai/index.html" />
-        <option value="$PROJECT_DIR$/manmanmai/less/base.less" />
-        <option value="$PROJECT_DIR$/manmanmai/category.html" />
         <option value="$PROJECT_DIR$/manmanmai/js/category.js" />
         <option value="$PROJECT_DIR$/manmanmai/js/bijia.js" />
         <option value="$PROJECT_DIR$/manmanmai/bijia.html" />
-        <option value="$PROJECT_DIR$/manmanmai/less/comment.less" />
-        <option value="$PROJECT_DIR$/manmanmai/productlist.html" />
         <option value="$PROJECT_DIR$/manmanmai/js/productlist.js" />
         <option value="$PROJECT_DIR$/manmanmai/js/details.js" />
+        <option value="$PROJECT_DIR$/manmanmai/css/comment.css" />
+        <option value="$PROJECT_DIR$/manmanmai/productlist.html" />
+        <option value="$PROJECT_DIR$/manmanmai/category.html" />
         <option value="$PROJECT_DIR$/manmanmai/details.html" />
+        <option value="$PROJECT_DIR$/manmanmai/index.html" />
+        <option value="$PROJECT_DIR$/manmanmai/js/moneyproduct.js" />
+        <option value="$PROJECT_DIR$/manmanmai/moneyctrl.html" />
+        <option value="$PROJECT_DIR$/manmanmai/css/base.css" />
+        <option value="$PROJECT_DIR$/manmanmai/moneyproduct.html" />
+        <option value="$PROJECT_DIR$/manmanmai/inlanddiscount.html" />
+        <option value="$PROJECT_DIR$/manmanmai/js/inlanddiscount.js" />
+        <option value="$PROJECT_DIR$/manmanmai/js/discount.js" />
+        <option value="$PROJECT_DIR$/manmanmai/discount.html" />
+        <option value="$PROJECT_DIR$/manmanmai/less/base.less" />
+        <option value="$PROJECT_DIR$/manmanmai/js/moneyctrl.js" />
+        <option value="$PROJECT_DIR$/manmanmai/js/baicaijia.js" />
+        <option value="$PROJECT_DIR$/manmanmai/baicaijia.html" />
+        <option value="$PROJECT_DIR$/manmanmai/js/coupon.js" />
+        <option value="$PROJECT_DIR$/manmanmai/coupon.html" />
+        <option value="$PROJECT_DIR$/manmanmai/js/couponproduct.js" />
+        <option value="$PROJECT_DIR$/manmanmai/less/comment.less" />
+        <option value="$PROJECT_DIR$/manmanmai/couponproduct.html" />
       </list>
     </option>
   </component>
@@ -171,7 +198,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -202,10 +228,17 @@
               <item name="manmanmai" type="462c0819:PsiDirectoryNode" />
               <item name="less" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="manmanmai" type="b2602c69:ProjectViewProjectNode" />
+              <item name="manmanmai" type="462c0819:PsiDirectoryNode" />
+              <item name="manmanmai" type="462c0819:PsiDirectoryNode" />
+              <item name="lib" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -233,6 +266,16 @@
       </list>
     </option>
   </component>
+  <component name="RunManager">
+    <configuration name="productlist.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/manmanmai/manmanmai/productlist.html">
+      <method v="2" />
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="JavaScript Debug.productlist.html" />
+      </list>
+    </recent_temporary>
+  </component>
   <component name="SvnConfiguration">
     <configuration />
   </component>
@@ -243,24 +286,22 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1539304216776</updated>
-      <workItem from="1539304219428" duration="39512000" />
+      <workItem from="1539304219428" duration="40965000" />
+      <workItem from="1539353826548" duration="243000" />
+      <workItem from="1539392816933" duration="32041000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39512000" />
+    <option name="totallyTimeSpent" value="73249000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Favorites" side_tool="true" />
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Docker" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.32850242" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -268,6 +309,10 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="9" />
+      <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -346,59 +391,178 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manmanmai/css/index.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="168">
-          <caret line="7" column="21" lean-forward="true" selection-start-line="7" selection-start-column="21" selection-end-line="7" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/css/index.css" />
     <entry file="file://$PROJECT_DIR$/manmanmai/lib/artTemplate/template-web.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/manmanmai/css/base.css">
+    <entry file="file://$PROJECT_DIR$/manmanmai/js/productlist.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-120">
-          <caret line="147" column="14" lean-forward="true" selection-start-line="147" selection-start-column="14" selection-end-line="147" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manmanmai/less/base.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-104">
-          <caret line="137" selection-start-line="137" selection-end-line="137" />
+        <state relative-caret-position="304">
+          <caret line="30" column="39" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="39" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manmanmai/category.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="82" column="72" selection-start-line="82" selection-start-column="72" selection-end-line="82" selection-end-column="72" />
+        <state relative-caret-position="192">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/details.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="264">
+          <caret line="17" column="32" selection-start-line="17" selection-start-column="32" selection-end-line="17" selection-end-column="32" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/productlist.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-752">
+          <caret line="42" column="24" selection-start-line="42" selection-start-column="16" selection-end-line="42" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/css/base.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="278" selection-start-line="278" selection-end-line="278" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/moneyproduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="26" column="13" selection-end-line="94" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/discount.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1432">
+          <caret line="88" column="31" selection-start-line="88" selection-start-column="31" selection-end-line="88" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/js/inlanddiscount.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="18" lean-forward="true" selection-start-line="8" selection-start-column="18" selection-end-line="8" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/less/base.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="139" column="3" selection-start-line="139" selection-start-column="3" selection-end-line="139" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/css/comment.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-5936">
+          <caret line="820" column="15" lean-forward="true" selection-start-line="820" selection-start-column="15" selection-end-line="820" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/lib/iscroll/iscroll.js">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://E:/黑马程序员/黑马26期前端学习/移动web/微金所/css/index.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="96">
+          <caret line="67" column="31" selection-start-line="67" selection-start-column="31" selection-end-line="67" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/moneyctrl.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="71" column="23" selection-start-line="71" selection-start-column="23" selection-end-line="71" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/黑马程序员/黑马26期前端学习/移动web/微金所/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="215" column="46" selection-start-line="215" selection-start-column="40" selection-end-line="215" selection-end-column="46" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/黑马程序员/黑马26期前端学习/移动web/微金所/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="62" column="4" lean-forward="true" selection-start-line="59" selection-start-column="2" selection-end-line="62" selection-end-column="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/inlanddiscount.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1056">
+          <caret line="61" column="23" lean-forward="true" selection-start-line="61" selection-start-column="23" selection-end-line="61" selection-end-column="23" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#p#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/baicaijia.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="12" selection-start-line="8" selection-start-column="12" selection-end-line="8" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/js/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="456">
+          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/js/moneyctrl.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="8" column="8" lean-forward="true" selection-start-line="8" selection-start-column="8" selection-end-line="8" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/js/discount.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="10" column="25" lean-forward="true" selection-start-line="10" selection-start-column="25" selection-end-line="10" selection-end-column="25" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manmanmai/js/category.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="664">
-          <caret line="33" column="87" selection-start-line="33" selection-start-column="87" selection-end-line="33" selection-end-column="87" />
+        <state relative-caret-position="480">
+          <caret line="20" column="13" selection-start-line="20" selection-start-column="13" selection-end-line="20" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/coupon.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="568">
+          <caret line="64" column="81" selection-start-line="64" selection-start-column="81" selection-end-line="64" selection-end-column="81" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/js/moneyproduct.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="72">
+          <caret line="3" column="10" lean-forward="true" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manmanmai/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="256">
-          <caret line="64" column="10" lean-forward="true" selection-start-line="61" selection-start-column="4" selection-end-line="64" selection-end-column="10" />
+        <state relative-caret-position="208">
+          <caret line="15" column="11" lean-forward="true" selection-start-line="15" selection-start-column="11" selection-end-line="15" selection-end-column="11" />
           <folding>
             <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#0;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#2;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
@@ -409,64 +573,47 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manmanmai/js/index.js">
+    <entry file="file://$PROJECT_DIR$/manmanmai/js/baicaijia.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="19" column="23" lean-forward="true" selection-start-line="19" selection-start-column="23" selection-end-line="19" selection-end-column="23" />
+        <state relative-caret-position="912">
+          <caret line="38" column="34" selection-start-line="38" selection-start-column="34" selection-end-line="38" selection-end-column="34" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manmanmai/less/comment.less">
+    <entry file="file://$PROJECT_DIR$/manmanmai/js/coupon.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="184">
-          <caret line="181" selection-start-line="181" selection-end-line="181" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manmanmai/productlist.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="76" column="89" selection-start-line="76" selection-start-column="80" selection-end-line="76" selection-end-column="89" />
-          <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#p#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/manmanmai/js/productlist.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="30" column="39" selection-start-line="30" selection-start-column="30" selection-end-line="30" selection-end-column="39" />
+        <state relative-caret-position="192">
+          <caret line="8" column="46" selection-start-line="8" selection-start-column="46" selection-end-line="8" selection-end-column="46" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/manmanmai/js/details.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="28" column="26" selection-start-line="28" selection-start-column="26" selection-end-line="28" selection-end-column="26" />
+        <state relative-caret-position="24">
+          <caret line="1" column="2" lean-forward="true" selection-start-line="1" selection-start-column="2" selection-end-line="5" selection-end-column="5" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/manmanmai/details.html">
+    <entry file="file://$PROJECT_DIR$/manmanmai/js/couponproduct.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="280">
-          <caret line="119" column="100" selection-start-line="119" selection-start-column="100" selection-end-line="119" selection-end-column="100" />
+        <state relative-caret-position="432">
+          <caret line="18" column="21" selection-start-line="18" selection-start-column="21" selection-end-line="18" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/less/comment.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="520">
+          <caret line="493" column="20" selection-start-line="493" selection-start-column="20" selection-end-line="493" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/manmanmai/couponproduct.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="376">
+          <caret line="32" column="17" selection-start-line="32" selection-start-column="17" selection-end-line="32" selection-end-column="17" />
           <folding>
-            <element signature="n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#2;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="e#1597#1602#1" expanded="true" />
-            <element signature="n#div#3;n#div#1;n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#style#0;n#a#0;n#p#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#1;n#p#0;n#div#1;n#div#3;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>

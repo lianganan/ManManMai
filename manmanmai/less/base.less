@@ -105,31 +105,38 @@ input, textarea, button {
 /*全屏容器*/
 .mmm_container {
   width: 100%;
-  height: 2500px;
   background-color: #f1f1f1;
   /*公共头部及搜索框*/
   .mmm_header {
     height: 98* @base;
     background-color: @mmmColor;
     border-bottom: 1px solid #ecf8ff;
+    position: relative;
     a {
       height: 100%;
       padding: 10*@base 12*@base;
     }
-    img {
-    }
     .mmm_logo {
       padding: 25*@base 16*@base;
+      position: absolute;
+      top: 0;
+      left: 0;
       img {
         height: 50*@base;
       }
     }
     .mmm_down {
       padding: 14*@base;
+      position: absolute;
+      top: 0;
+      right: 0;
       img {
         height: 68*@base;
       }
     }
+  }
+  .baicaijia_header {
+    background-color: #f4483e;
   }
   .mmm_search {
     padding: 20*@base;
@@ -187,5 +194,72 @@ input, textarea, button {
   .footer_b {
     padding: 20*@base 0;
     text-align: center;
+  }
+}
+/*评价的公共类*/
+.comment {
+  background-color: #fff;
+  padding: 0 10*@base;
+  .tit {
+    line-height: 80*@base;
+    .font-size(36);
+    padding: 0 20*@base;
+    color: #000;
+  }
+  .reply {
+    padding: 0 20*@base;
+    .form {
+      border: 2px solid #ccc;
+      overflow: hidden;
+      input[type='submit'] {
+        float: right;
+        width: 200*@base;
+        height: 80*@base;
+        background-color: @mmmColor;
+      }
+    }
+    textarea {
+      height: 228*@base;
+      width: 100%;
+      .font-size(32);
+    }
+  }
+  .list {
+    padding: 0 20*@base;
+    li {
+      position: relative;
+      height: 175*@base;
+    }
+    .userimg {
+      float: left;
+    }
+    .userimg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      img {
+        width: 80*@base;
+        border-radius: 50%;
+      }
+    }
+    .con {
+      padding-left: 100*@base;
+      height: 100%;
+      .name {
+        .font-size(32);
+        .username {
+          float: left;
+          color: #78b9e4;
+        }
+        .time {
+          float: right;
+          color: #ccc;
+        }
+      }
+      .content {
+        padding: 20*@base;
+        color: #53534c;
+      }
+    }
   }
 }

@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./lib/flexible/flexible_css.js"></script>
+  <script src="./lib/flexible/flexible.js"></script>
+  <link rel="stylesheet" href="./css/comment.css">
+  <title>省钱控</title>
+</head>
+<body>
+
+<!--全屏容器-->
+<div class="mmm_container">
+
+  <!--头部-->
+  <div class="mmm_header">
+    <a href="javascript:history.back();" class="icon_back mmm_logo"></a>
+    <h3 class="moneyctrl_tit">省钱控-最新优惠</h3>
+    <a href="javascript: void(0);" class="mmm_down">
+      <img src="./images/header_app.png" alt="">
+    </a>
+  </div>
+
+
+  <!--主体内容-->
+  <div class="mmm_main">
+    <div class="products">
+      <ul>
+        <!--模板渲染-->
+      </ul>
+    </div>
+  </div>
+
+
+  <!--查看更多-->
+  <div class="mmm_more">
+    <a href="#">更多优惠信息>></a>
+  </div>
+
+</div>
+
+<!--底部-->
+<div class="mmm_footer">
+  <div class="footer_t clearfix">
+    <a href="#">登录</a>
+    <a href="#">注册</a>
+    <a href="#">
+      <img src="./images/top.jpg" alt="">
+      返回顶部
+    </a>
+  </div>
+  <div class="footer_b">
+    <p>
+      <a href="#" style="color: red;">手机APP下载</a>
+      <a href="#" style="color: #000">慢慢买手机版</a>
+      <a href="#">--掌上比价平台</a>
+    </p>
+    <p>m.manmanbuy.com</p>
+  </div>
+</div>
+
+</div>
+<script src="./lib/jquery/jquery-1.12.0.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/moneyctrl.js"></script>
+<script type="text/template" id="tmp">
+  {{each result v i}}
+  <li>
+    <a href="javascript:void(0);" class="clearfix" data-productid="{{v.productId}}">
+      <div class="left f-left">
+        {{@v.productImgSm}}
+      </div>
+      <div class="right">
+        <div class="pro_title">
+          {{v.productName}} <span>{{v.productPinkage}}</span>
+        </div>
+        <div class="other">
+          <span class="mall f-left">{{v.productFrom}} | {{v.productTime}}</span>
+          <span class="comment f-right"><i class="icon-comment"></i>{{v.productComCount}}</span>
+        </div>
+      </div>
+    </a>
+  </li>
+  {{/each}}
+</script>
+
+</body>
+</html>

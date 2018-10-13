@@ -6,7 +6,7 @@
   <script src="./lib/flexible/flexible_css.js"></script>
   <script src="./lib/flexible/flexible.js"></script>
   <link rel="stylesheet" href="./css/comment.css">
-  <title>比价搜索</title>
+  <title>优惠券</title>
 </head>
 <body>
 
@@ -14,31 +14,25 @@
 <div class="mmm_container">
 
   <!--头部-->
-  <div class="mmm_header">
-    <a href="index.html" class="mmm_logo">
-      <img src="./images/header_logo.png" alt="">
-    </a>
+  <div class="mmm_header baicaijia_header">
+    <a href="javascript:history.back();" class="icon_back mmm_logo"></a>
+    <h3 class="moneyctrl_tit">优惠券</h3>
     <a href="javascript: void(0);" class="mmm_down">
       <img src="./images/header_app.png" alt="">
     </a>
   </div>
 
-  <!--搜索框-->
-  <div class="mmm_search clearfix">
-    <div class="input_search">
-      <input type="text" placeholder="请输入你想比价的商品">
-    </div>
-    <button>搜索</button>
-  </div>
 
   <!--主体内容-->
-  <div class="category_main">
+  <div class="mmm_main">
 
-    <ul class="category_list">
-      <!--模板渲染-->
+    <ul class="coupon clearfix">
+
+
     </ul>
 
   </div>
+
 
   <!--底部-->
   <div class="mmm_footer">
@@ -63,27 +57,18 @@
 </div>
 <script src="./lib/jquery/jquery-1.12.0.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
-<script src="./js/category.js"></script>
-<script type="text/template" id="tmp1">
+<script src="./lib/iscroll/iscroll.js"></script>
+<script src="./js/coupon.js"></script>
+<script type="text/template" id="tmp">
 {{each result v i}}
   <li>
-    <div class="title" data-id="{{v.titleId}}">
-      <a href="javascript:void(0);">{{v.title}}</a>
-    </div>
-    <div class="content">
-      <ul class="clearfix">
+    <a href="{{v.couponLink}}?coupontitle={{v.couponTitle}}&couponid={{v.couponId}}">
+      <img src="{{v.couponImg}}" alt="">
+    </a>
+  </li>
+{{/each}}
+</script>
 
-      </ul>
-    </div>
-  </li>
-{{/each}}
-</script>
-<script type="text/template" id="tmp2">
-{{each result v i}}
-  <li class="category_id" data-cgid="{{v.categoryId}}" data-category="{{v.category}}">
-    <a href="javascript:void(0);">{{v.category}}</a>
-  </li>
-{{/each}}
-</script>
+
 </body>
 </html>

@@ -146,7 +146,6 @@ button {
 /*全屏容器*/
 .mmm_container {
   width: 100%;
-  height: 2500px;
   background-color: #f1f1f1;
   /*公共头部及搜索框*/
 }
@@ -154,6 +153,7 @@ button {
   height: 1.306634rem;
   background-color: #ff841d;
   border-bottom: 1px solid #ecf8ff;
+  position: relative;
 }
 .mmm_container .mmm_header a {
   height: 100%;
@@ -161,15 +161,24 @@ button {
 }
 .mmm_container .mmm_header .mmm_logo {
   padding: 0.333325rem 0.213328rem;
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .mmm_container .mmm_header .mmm_logo img {
   height: 0.66665rem;
 }
 .mmm_container .mmm_header .mmm_down {
   padding: 0.186662rem;
+  position: absolute;
+  top: 0;
+  right: 0;
 }
 .mmm_container .mmm_header .mmm_down img {
   height: 0.906644rem;
+}
+.mmm_container .baicaijia_header {
+  background-color: #f4483e;
 }
 .mmm_container .mmm_search {
   padding: 0.26666rem;
@@ -269,4 +278,116 @@ button {
 .mmm_footer .footer_b {
   padding: 0.26666rem 0;
   text-align: center;
+}
+/*评价的公共类*/
+.comment {
+  background-color: #fff;
+  padding: 0 0.13333rem;
+}
+.comment .tit {
+  line-height: 1.06664rem;
+  font-size: 18px;
+  padding: 0 0.26666rem;
+  color: #000;
+}
+[data-dpr='2'] .comment .tit {
+  font-size: 36px;
+}
+[data-dpr='2.5'] .comment .tit {
+  font-size: 45px;
+}
+[data-dpr="2.75"] .comment .tit {
+  font-size: 50px;
+}
+[data-dpr="3"] .comment .tit {
+  font-size: 54px;
+}
+[data-dpr="4"] .comment .tit {
+  font-size: 72px;
+}
+.comment .reply {
+  padding: 0 0.26666rem;
+}
+.comment .reply .form {
+  border: 2px solid #ccc;
+  overflow: hidden;
+}
+.comment .reply .form input[type='submit'] {
+  float: right;
+  width: 2.6666rem;
+  height: 1.06664rem;
+  background-color: #ff841d;
+}
+.comment .reply textarea {
+  height: 3.039924rem;
+  width: 100%;
+  font-size: 16px;
+}
+[data-dpr='2'] .comment .reply textarea {
+  font-size: 32px;
+}
+[data-dpr='2.5'] .comment .reply textarea {
+  font-size: 40px;
+}
+[data-dpr="2.75"] .comment .reply textarea {
+  font-size: 44px;
+}
+[data-dpr="3"] .comment .reply textarea {
+  font-size: 48px;
+}
+[data-dpr="4"] .comment .reply textarea {
+  font-size: 64px;
+}
+.comment .list {
+  padding: 0 0.26666rem;
+}
+.comment .list li {
+  position: relative;
+  height: 2.333275rem;
+}
+.comment .list .userimg {
+  float: left;
+}
+.comment .list .userimg {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.comment .list .userimg img {
+  width: 1.06664rem;
+  border-radius: 50%;
+}
+.comment .list .con {
+  padding-left: 1.3333rem;
+  height: 100%;
+}
+.comment .list .con .name {
+  font-size: 16px;
+}
+[data-dpr='2'] .comment .list .con .name {
+  font-size: 32px;
+}
+[data-dpr='2.5'] .comment .list .con .name {
+  font-size: 40px;
+}
+[data-dpr="2.75"] .comment .list .con .name {
+  font-size: 44px;
+}
+[data-dpr="3"] .comment .list .con .name {
+  font-size: 48px;
+}
+[data-dpr="4"] .comment .list .con .name {
+  font-size: 64px;
+}
+.comment .list .con .name .username {
+  float: left;
+  color: #78b9e4;
+}
+.comment .list .con .name .time {
+  float: right;
+  color: #ccc;
+}
+.comment .list .con .content {
+  padding: 0.26666rem;
+  color: #53534c;
 }

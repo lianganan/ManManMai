@@ -6,7 +6,7 @@
   <script src="./lib/flexible/flexible_css.js"></script>
   <script src="./lib/flexible/flexible.js"></script>
   <link rel="stylesheet" href="./css/comment.css">
-  <title>比价搜索</title>
+  <title>国内折扣</title>
 </head>
 <body>
 
@@ -15,28 +15,16 @@
 
   <!--头部-->
   <div class="mmm_header">
-    <a href="index.html" class="mmm_logo">
-      <img src="./images/header_logo.png" alt="">
-    </a>
+    <a href="javascript:history.back();" class="icon_back mmm_logo"></a>
+    <h3 class="moneyctrl_tit">国内折扣</h3>
     <a href="javascript: void(0);" class="mmm_down">
       <img src="./images/header_app.png" alt="">
     </a>
   </div>
 
-  <!--搜索框-->
-  <div class="mmm_search clearfix">
-    <div class="input_search">
-      <input type="text" placeholder="请输入你想比价的商品">
-    </div>
-    <button>搜索</button>
-  </div>
 
   <!--主体内容-->
-  <div class="category_main">
-
-    <ul class="category_list">
-      <!--模板渲染-->
-    </ul>
+  <div class="mmm_main">
 
   </div>
 
@@ -63,27 +51,45 @@
 </div>
 <script src="./lib/jquery/jquery-1.12.0.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
-<script src="./js/category.js"></script>
-<script type="text/template" id="tmp1">
-{{each result v i}}
-  <li>
-    <div class="title" data-id="{{v.titleId}}">
-      <a href="javascript:void(0);">{{v.title}}</a>
-    </div>
-    <div class="content">
-      <ul class="clearfix">
+<script src="./js/discount.js"></script>
 
-      </ul>
+<script type="text/template" id="tmp">
+
+  <!--文章区域-->
+  <div class="mp_section">
+    <div class="mp_title">
+      <h3>{{result[0].productName}}</h3>
+      <p>{{result[0].productFrom}}&nbsp;&nbsp;{{result[0].productTime}}&nbsp;&nbsp;{{result[0].productTips}}</p>
     </div>
-  </li>
-{{/each}}
+    <div class="mp_content clearfix">
+      {{@result[0].productImg}}
+      {{result[0].productInfo}}
+    </div>
+    <div class="mp_pic">
+      {{@result[0].productImg}}
+    </div>
+    <div class="mp_inventory">
+      <%
+      if (result[0].productCity) {
+      %>
+      {{@result[0].productCity}}
+      <%
+      }
+      %>
+    </div>
+    <div class="mp_buy">
+      <a href="#">前往购买</a>
+    </div>
+    <div class="mp_rwm">
+      <img src="./images/mmbweixin2.png" alt="">
+    </div>
+  </div>
+  <!--评论区域-->
+  <div class="comment">
+    {{@result[0].productComment}}
+  </div>
+
 </script>
-<script type="text/template" id="tmp2">
-{{each result v i}}
-  <li class="category_id" data-cgid="{{v.categoryId}}" data-category="{{v.category}}">
-    <a href="javascript:void(0);">{{v.category}}</a>
-  </li>
-{{/each}}
-</script>
+
 </body>
 </html>
