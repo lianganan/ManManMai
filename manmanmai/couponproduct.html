@@ -5,6 +5,7 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <script src="./lib/flexible/flexible_css.js"></script>
   <script src="./lib/flexible/flexible.js"></script>
+  <link rel="stylesheet" href="./lib/swiper/css/swiper.css">
   <link rel="stylesheet" href="./css/comment.css">
   <title>优惠券</title>
 </head>
@@ -28,10 +29,8 @@
     <div class="prompt">
       <p>--点餐前出示手机中的优惠券，即可享受优惠--</p>
     </div>
-    <ul>
-      <li>
-        <a href=""></a>
-      </li>
+    <ul class="cpp_list">
+
     </ul>
 
   </div>
@@ -57,13 +56,43 @@
     </div>
   </div>
 
+  <!--模态框-->
+  <div class="motaikuang" style="display: none">
+    <div class="swiper-container">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="./images/product.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/product.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="./images/product.jpg" alt=""></div>
+      </div>
+      <!-- 如果需要导航按钮 -->
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div>
+
+    </div>
+  </div>
+
 </div>
 <script src="./lib/jquery/jquery-1.12.0.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
 <script src="./lib/iscroll/iscroll.js"></script>
+<script src="./lib/swiper/js/swiper.js"></script>
 <script src="./js/couponproduct.js"></script>
 <script type="text/template" id="tmp">
-
+{{each result v i}}
+  <li>
+    <a href="#" data-couponProductid="{{v.couponProductId}}">
+      <div class="cpp_pic">
+        {{@v.couponProductImg}}
+      </div>
+      <div class="cpp_con">
+        <h3>{{v.couponProductName}}</h3>
+        <span class="cpp_pir">{{v.couponProductPrice}}</span>
+        <p class="cpp_tim">{{v.couponProductTime}}</p>
+      </div>
+      <div class="ccp_jt"> > </div>
+    </a>
+  </li>
+{{/each}}
 </script>
 
 

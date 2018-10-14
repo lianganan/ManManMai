@@ -391,3 +391,52 @@ button {
   padding: 0.26666rem;
   color: #53534c;
 }
+/*分页*/
+.mmm_page {
+  height: 0.79998rem;
+  text-align: center;
+  line-height: 0.79998rem;
+  font-size: 14px;
+}
+[data-dpr='2'] .mmm_page {
+  font-size: 28px;
+}
+[data-dpr='2.5'] .mmm_page {
+  font-size: 35px;
+}
+[data-dpr="2.75"] .mmm_page {
+  font-size: 39px;
+}
+[data-dpr="3"] .mmm_page {
+  font-size: 42px;
+}
+[data-dpr="4"] .mmm_page {
+  font-size: 56px;
+}
+.mmm_page button {
+  width: 1.73329rem;
+  height: 0.53332rem;
+  background-image: linear-gradient(#eeeeee, #bbbbbb);
+  margin: 0 0.26666rem;
+  font-size: 12px;
+}
+[data-dpr='2'] .mmm_page button {
+  font-size: 24px;
+}
+[data-dpr='2.5'] .mmm_page button {
+  font-size: 30px;
+}
+[data-dpr="2.75"] .mmm_page button {
+  font-size: 33px;
+}
+[data-dpr="3"] .mmm_page button {
+  font-size: 36px;
+}
+[data-dpr="4"] .mmm_page button {
+  font-size: 48px;
+}
+.mmm_page input {
+  height: 0.53332rem;
+  width: 0.79998rem;
+  text-align: center;
+}

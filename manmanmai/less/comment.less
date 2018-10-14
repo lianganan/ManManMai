@@ -9,6 +9,9 @@
       width: 25%;
       padding: 48*@base 0;
     }
+    li:not(:nth-child(-n+8)) {
+      display: none;
+    }
     a {
       display: block;
       text-align: center;
@@ -61,6 +64,7 @@
     color: #000;
   }
 }
+
 
 /*商品公共布局*/
 .products {
@@ -492,4 +496,116 @@
   background-color: #fff;
   line-height: 65*@base;
   text-align: center;
+}
+.cpp_list {
+  li {
+    background-color: #fff;
+    border-bottom: 1px solid #ccc;
+  }
+  a {
+    display: block;
+    position: relative;
+    height: 300*@base;
+    .cpp_pic,.ccp_jt {
+      position: absolute;
+      top: 0;
+    }
+    .cpp_con {
+      padding: 40*@base 40*@base 0 300*@base;
+      height: 100%;
+      h3 {
+        .font-size(36);
+        color: #000;
+        margin-bottom: 20*@base;
+        height: 120*@base;
+      }
+      .cpp_pir {
+        .font-size(28);
+        color: #666666;
+        font-weight: 700;
+      }
+      .cpp_tim {
+        margin-top: 20*@base;
+        .font-size(32);
+        color: orange;
+      }
+    }
+    .cpp_pic {
+      width: 300*@base;
+      left: 0;
+      height: 100%;
+      text-align: center;
+      line-height: 300*@base;
+      img {
+        width: 250*@base;
+        vertical-align: middle;
+      }
+    }
+    .ccp_jt {
+      width: 40*@base;
+      right: 0;
+      height: 100%;
+      .font-size(80);
+      font-family: "宋体";
+      line-height: 300*@base;
+      text-align: center;
+    }
+  }
+}
+/*模态框*/
+.motaikuang {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  background-color: rgba(0,0,0,.3);
+  .swiper-container {
+    width: 600*@base;
+    height: 300*@base;
+    text-align: center;
+    line-height: 300*@base;
+    margin-top: 300*@base;
+    img {
+      vertical-align: middle;
+    }
+  }
+}
+/*凑单品*/
+.gsp_title {
+  height: 60*@base;
+  background-color: #fff;
+  position: relative;
+  .tit_con {
+    padding-right: 80*@base;
+    height: 100%;
+    li {
+      float: left;
+      width: 33.33%;
+      height: 100%;
+      line-height: 60*@base;
+      text-align: center;
+      .font-size(32);
+      border-bottom: 1px solid #ccc;
+    }
+  }
+  .tit_icon {
+    position: absolute;
+    height: 100%;
+    width: 80*@base;
+    top: 0;
+    right: 0;
+    background: url("../images/icon_bar.png") no-repeat 0 -103*@base, linear-gradient(#fff,#ccc);
+    background-size: 440*@base 264*@base;
+    border: 1px solid #ccc;
+  }
+}
+.gsp_xl {
+  li {
+    height: 60*@base;
+    border-bottom: 1px solid #ccc;
+    background-color: #fff;
+    line-height: 60*@base;
+    padding-left: 40*@base;
+  }
 }

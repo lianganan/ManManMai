@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="./lib/flexible/flexible_css.js"></script>
+  <script src="./lib/flexible/flexible.js"></script>
+  <link rel="stylesheet" href="./css/comment.css">
+  <title>凑单品</title>
+</head>
+<body>
+
+<!--全屏容器-->
+<div class="mmm_container">
+
+  <!--头部-->
+  <div class="mmm_header">
+    <a href="javascript:history.back();" class="icon_back mmm_logo"></a>
+    <h3 class="moneyctrl_tit">凑单品</h3>
+    <a href="javascript: void(0);" class="mmm_down">
+      <img src="./images/header_app.png" alt="">
+    </a>
+  </div>
+
+
+  <!--主体内容-->
+  <div class="mmm_main">
+    <div class="gsp_title">
+      <ul class="tit_con clearfix">
+        <li class="dp">京东&nbsp;▼</li>
+        <li class="dq">华北&nbsp;▼</li>
+        <li class="all">全部价格&nbsp;▼</li>
+      </ul>
+      <div class="tit_icon"></div>
+    </div>
+    <div class="gsp_xl shop" style="display: none;">
+
+    </div>
+    <div class="gsp_xl area" style="display: none;">
+
+    </div>
+  </div>
+
+  <!--底部-->
+  <div class="mmm_footer">
+    <div class="footer_t clearfix">
+      <a href="#">登录</a>
+      <a href="#">注册</a>
+      <a href="#">
+        <img src="./images/top.jpg" alt="">
+        返回顶部
+      </a>
+    </div>
+    <div class="footer_b">
+      <p>
+        <a href="#" style="color: red;">手机APP下载</a>
+        <a href="#" style="color: #000">慢慢买手机版</a>
+        <a href="#">--掌上比价平台</a>
+      </p>
+      <p>m.manmanbuy.com</p>
+    </div>
+  </div>
+
+</div>
+<script src="./lib/jquery/jquery-1.12.0.js"></script>
+<script src="./lib/artTemplate/template-web.js"></script>
+<script src="./js/gsproduct.js"></script>
+
+<script type="text/template" id="tmp">
+
+  <ul>
+    {{each result v i}}
+    <li data-shopid="{{v.shopId}}">{{v.shopName}}</li>
+    {{/each}}
+  </ul>
+
+</script>
+
+<script type="text/template" id="tmp1">
+
+  <ul>
+    {{each result v i}}
+    <li data-areaid="{{v.areaId}}">{{v.areaName}}</li>
+    {{/each}}
+  </ul>
+
+</script>
+
+</body>
+</html>
