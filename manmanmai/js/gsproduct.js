@@ -72,6 +72,8 @@ function dp() {
       dataType:'json',
       success:function (info) {
         console.log(info);
+        $('.gsp_prod ul').html(template('tmp3',info));
+        $('.gsp_xl').hide();
       }
     })
   }

@@ -6,7 +6,7 @@
   <script src="./lib/flexible/flexible_css.js"></script>
   <script src="./lib/flexible/flexible.js"></script>
   <link rel="stylesheet" href="./css/comment.css">
-  <title>凑单品</title>
+  <title>商场导航</title>
 </head>
 <body>
 
@@ -16,7 +16,7 @@
   <!--头部-->
   <div class="mmm_header">
     <a href="javascript:history.back();" class="icon_back mmm_logo"></a>
-    <h3 class="moneyctrl_tit">凑单品</h3>
+    <h3 class="moneyctrl_tit">商场导航</h3>
     <a href="javascript: void(0);" class="mmm_down">
       <img src="./images/header_app.png" alt="">
     </a>
@@ -25,28 +25,10 @@
 
   <!--主体内容-->
   <div class="mmm_main">
-    <div class="gsp_title">
-      <ul class="tit_con clearfix">
-        <li class="dp">京东&nbsp;▼</li>
-        <li class="dq">华北&nbsp;▼</li>
-        <li class="all">全部价格&nbsp;▼</li>
-      </ul>
-      <div class="tit_icon"></div>
-    </div>
-    <div class="gsp_xl shop" style="display: none;">
+    <div class="sitenav">
 
-    </div>
-    <div class="gsp_xl area" style="display: none;">
-
-    </div>
-    <div class="gsp_prod">
-      <ul class="clearfix">
-
-      </ul>
     </div>
   </div>
-
-
 
   <!--底部-->
   <div class="mmm_footer">
@@ -71,39 +53,16 @@
 </div>
 <script src="./lib/jquery/jquery-1.12.0.js"></script>
 <script src="./lib/artTemplate/template-web.js"></script>
-<script src="./js/gsproduct.js"></script>
+<script src="./js/sitenav.js"></script>
 
 <script type="text/template" id="tmp">
-
-  <ul>
-    {{each result v i}}
-    <li data-shopid="{{v.shopId}}">{{v.shopName}}</li>
-    {{/each}}
-  </ul>
-
+{{each result v i}}
+  <a href="{{v.navHref}}">
+    <img src="{{v.navImg}}" alt="">
+    {{v.navTitle}}
+  </a>
+{{/each}}
 </script>
 
-<script type="text/template" id="tmp1">
-
-  <ul>
-    {{each result v i}}
-    <li data-areaid="{{v.areaId}}">{{v.areaName}}</li>
-    {{/each}}
-  </ul>
-
-</script>
-
-<script type="text/html" id="tmp3">
-  {{each result v i}}
-  <li>
-    <a href="#">
-      <img src="{{v.productImg}}" alt="">
-      <h3>{{v.productName}}</h3>
-      <span>{{v.productPrice}}</span>
-      <button>去凑单</button>
-    </a>
-  </li>
-  {{/each}}
-</script>
 </body>
 </html>
